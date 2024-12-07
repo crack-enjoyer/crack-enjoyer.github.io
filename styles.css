@@ -391,10 +391,6 @@ table td input[type='checkbox']:checked + table td{
         padding: 0px;
     }
 
-    .video {
-        width: 40vw;
-    }
-
     .map {
         width: 60vw;
         height: 70vh;
@@ -567,11 +563,14 @@ table td input[type='checkbox']:checked + table td{
     }
 
     .footer-content {
-        display: flex;
         flex-direction: column;
     }
 
     .footer-text {
         flex: 0;
+    }
+
+    .social-net-links {
+        position: relative;
     }
 }
