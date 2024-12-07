@@ -7,16 +7,12 @@ document.addEventListener("DOMContentLoaded", function() {
         studentPhoto.style.height = '10vh';
     });
     studentPhoto?.addEventListener('click', () => {
-        studentPhoto.src = 'funny.jpg';
+        studentPhoto.src = 'funny.jpeg';
         studentPhoto.alt = 'Фото любимого преподавателя';
     });
     studentPhoto?.addEventListener('dblclick', function() {
         alert('Не налегай, у меня не так много любимых преподавателей');
     });
-});
-
-document.getElementById('text')?.addEventListener('click', function() {
-    this.classList.toggle('clicked');
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -105,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const message = document.getElementById('message');
                 message.textContent = 'Форма отправлена!';
                 message.style.opacity = 1;
-                message.style.color = 'lightblue';
+                message.style.color = 'blue';
 
                 setTimeout(() => {
                     modal.style.display = "none";
@@ -258,8 +254,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.getElementById('showLectures')?.addEventListener('click', function() {
-    const table = document.getElementById('lectures');
+const button = document.getElementById('show-lectures');
+const table = document.getElementById('lections');
+
+button.addEventListener('click', () => {
+    table.style.display = 'block';
+    table.style.width = '500px';
+    table.style.transition = 'opacity 0.5s ease';
     table.style.opacity = 1;
-    table.style.visibility = 'visible';
 });

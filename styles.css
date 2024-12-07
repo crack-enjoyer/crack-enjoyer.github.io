@@ -14,11 +14,11 @@ header {
 }
 
 .title {
-    transition: font-size 0.3s;
-  }
+    transition: font-size 0.5s;
+}
   
 .title:hover {
-    font-size: 48px;
+    font-size: 36px;
 }
 
 h2, h3 {
@@ -41,21 +41,12 @@ h2, h3 {
     text-align: right;
 }
 
-#student-photo {
-    transition: transform 0.5s;
+.paragraph {
+    transition: background-color 0.5s;
 }
   
-#student-photo:hover {
-    transform: rotate(360deg);
-}
-
-
-#text {
-    transition: background-color 0.5s ease;
-}
-
-#text.clicked {
-    background-color: lightblue;
+.paragraph:active {
+    background-color: #ccc;
 }
 
 .sticky {
@@ -164,22 +155,30 @@ aside a:hover {
     box-shadow: none;
 }
 
-.footer-content {
+footer {
     background-color: #333;
     color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-columns: 55vw 43vw;
+    padding: 10px 0; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    padding: 0 20px; 
 }
 
 .footer-text {
-    text-align: right;
-    padding-top: 5px;
     margin: 0;
+    text-align: center; 
+    flex: 1; 
 }
 
 .social-net-links {
-    padding: 10px;
-    text-align: right;
+    display: flex; 
+    position: absolute; 
+    right: 20px;
 }
 
 .web-apps {
@@ -236,7 +235,7 @@ aside a:hover {
 }
   
 .openModal:hover:before {
-    left:95%;
+    left: 95%;
 }
 
 .modal {
@@ -331,20 +330,25 @@ table td input[type='checkbox']:checked + table td{
 }
 
 .seminars {
-    width: 80%;
+    width: 90%;
 }
 
-#lectures {
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+.lections {
+    transition: opacity 0.5s;
+}
+  
+.lections.show {
+    display: block;
+    opacity: 1;
 }
 
 .change-table-btn {
-    max-width: 200px;
     margin-top: 20px;
     height: 2%;
     background-color: rgb(214, 214, 214);
     border: none;
     border-radius: 5px;
+    width: 180px;
 }
 
 .change-table-btn:hover {
@@ -364,10 +368,6 @@ table td input[type='checkbox']:checked + table td{
 
     .logo img {
         height: 7vh;
-    }
-
-    .footer-content {
-        grid-template-columns: 55vw 44vw;
     }
 }
 
@@ -404,10 +404,6 @@ table td input[type='checkbox']:checked + table td{
         width: 65vw;
         height: 70vh;
     }
-
-    .footer-content {
-        grid-template-columns: 59vw 39vw;
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -440,9 +436,8 @@ table td input[type='checkbox']:checked + table td{
     }
 
     .footer-content {
-        grid-template-columns: 63vw 35vw;
         img {
-            height: 5vh;
+            height: 6vh;
         }
     }
 }
@@ -457,12 +452,12 @@ table td input[type='checkbox']:checked + table td{
     }
 
     .app {
-        margin: 5px;
+        margin: 15px;
     }
 
     .footer-content {
         img {
-            height: 3vh;
+            height: 5vh;
         }
     }
 }
@@ -497,6 +492,9 @@ table td input[type='checkbox']:checked + table td{
     }
     
     .content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;    
         padding: 0;
         padding-left: 5px;
     }
@@ -510,20 +508,70 @@ table td input[type='checkbox']:checked + table td{
         flex-direction: column;
     }
 
-    .footer-content {
-        grid-template-columns: 64vw 34vw;
-        img {
-            height: 3vh;
-        }
-    }
-
     .map {
+        height: 55vh;
         width: 70vw;
     }
 
     .doc {
-        height: 70vh;
+        height: 55vh;
         width: 80vw;
     }
 
+    .video {
+        width: 80vw;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-text {
+        flex: none;
+        p {
+            margin: 5;
+        }
+    }
+
+    .social-net-links {
+        text-align: center; 
+        img {
+            height: 4vh;
+        }
+    }
+
+    .change-table-btn {
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lections {
+        max-width: 90%;
+    }
+
+    table th {
+        text-align: center;
+        padding-inline: 0;
+    }
+
+    table td {
+        text-align: center;
+        padding-inline: 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-text {
+        flex: 0;
+    }
 }
