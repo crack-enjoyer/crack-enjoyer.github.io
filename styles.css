@@ -61,6 +61,7 @@ nav ul {
     justify-content: space-evenly;
     margin: 0;
     background-color: rgb(53,92,167);
+    text-decoration: none;
     text-align: center;
     list-style-type: none;
     a {
