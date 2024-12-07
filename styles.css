@@ -158,28 +158,27 @@ aside a:hover {
 footer {
     background-color: #333;
     color: rgb(255, 255, 255);
-    padding: 10px 0; /* Отступы для футера */
+    padding: 10px 0; 
 }
 
 .footer-content {
     display: flex;
-    justify-content: center; /* Центрируем содержимое */
-    align-items: center; /* Выравниваем по вертикали */
-    position: relative; /* Позволяет размещать элементы относительно этого контейнера */
-    padding: 0 20px; /* Боковые отступы */
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    padding: 0 20px; 
 }
 
 .footer-text {
-    margin: 0; /* Убираем внешние отступы */
-    text-align: center; /* Центрируем текст */
-    flex: 1; /* Позволяем текстовому блоку занимать все доступное пространство */
+    margin: 0;
+    text-align: center; 
+    flex: 1; 
 }
 
 .social-net-links {
-    display: flex; /* Выстраиваем ссылки в ряд */
-    gap: 10px; /* Расстояние между иконками */
-    position: absolute; /* Позволяет разместить ссылки относительно родительского элемента */
-    right: 20px; /* Отступ от правого края */
+    display: flex; 
+    position: absolute; 
+    right: 20px;
 }
 
 .web-apps {
@@ -236,7 +235,7 @@ footer {
 }
   
 .openModal:hover:before {
-    left:95%;
+    left: 95%;
 }
 
 .modal {
@@ -331,7 +330,7 @@ table td input[type='checkbox']:checked + table td{
 }
 
 .seminars {
-    width: 80%;
+    width: 90%;
 }
 
 .lections {
@@ -349,7 +348,7 @@ table td input[type='checkbox']:checked + table td{
     background-color: rgb(214, 214, 214);
     border: none;
     border-radius: 5px;
-    width: 10vw;
+    width: 180px;
 }
 
 .change-table-btn:hover {
@@ -390,10 +389,6 @@ table td input[type='checkbox']:checked + table td{
             text-align: center;
         }
         padding: 0px;
-    }
-
-    .video {
-        width: 40vw;
     }
 
     .map {
@@ -453,7 +448,7 @@ table td input[type='checkbox']:checked + table td{
     }
 
     .app {
-        margin: 5px;
+        margin: 15px;
     }
 
     .footer-content {
@@ -493,6 +488,9 @@ table td input[type='checkbox']:checked + table td{
     }
     
     .content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;    
         padding: 0;
         padding-left: 5px;
     }
@@ -507,11 +505,16 @@ table td input[type='checkbox']:checked + table td{
     }
 
     .map {
+        height: 55vh;
         width: 70vw;
     }
 
     .doc {
-        height: 70vh;
+        height: 55vh;
+        width: 80vw;
+    }
+
+    .video {
         width: 80vw;
     }
 
@@ -532,5 +535,42 @@ table td input[type='checkbox']:checked + table td{
         img {
             height: 4vh;
         }
+    }
+
+    .change-table-btn {
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lections {
+        max-width: 90%;
+    }
+
+    table th {
+        text-align: center;
+        padding-inline: 0;
+    }
+
+    table td {
+        text-align: center;
+        padding-inline: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-text {
+        flex: 0;
+    }
+
+    .social-net-links {
+        position: relative;
     }
 }

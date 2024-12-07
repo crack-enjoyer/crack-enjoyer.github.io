@@ -53,20 +53,30 @@
         .carousel-control-next-icon {
             filter: invert(1); 
         }
-        .footer-content {
+        footer {
             background-color: #333;
             color: rgb(255, 255, 255);
-            display: grid;
-            grid-template-columns: 55vw 43vw;
+            padding: 10px 0; 
         }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; 
+            padding: 0 20px; 
+        }
+
         .footer-text {
-            text-align: right;
-            padding-top: 20px;
-            font-size: large;
+            margin: 0;
+            text-align: center; 
+            flex: 1; 
         }
+
         .social-net-links {
-            padding: 10px;
-            text-align: right;
+            display: flex; 
+            position: absolute; 
+            right: 20px;
         }
         
         @media screen and (max-width: 1023px) {
@@ -74,7 +84,7 @@
                 font-size: medium;
             }
             .social-net-links img{
-                height: 5vh;
+                height: 3vh;
             }
         }
     </style>

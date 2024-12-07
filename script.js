@@ -1,21 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const studentPhoto = document.getElementById('student-photo');
-    studentPhoto?.addEventListener('mouseover', () => {
-        studentPhoto.style.height = '20vh';
-    });
-    studentPhoto?.addEventListener('mouseout', () => {
-        studentPhoto.style.height = '10vh';
-    });
-    studentPhoto?.addEventListener('click', () => {
-        studentPhoto.src = 'funny.jpeg';
-        studentPhoto.alt = 'Фото любимого преподавателя';
-    });
-    studentPhoto?.addEventListener('dblclick', function() {
-        alert('Не налегай, у меня не так много любимых преподавателей');
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
     const currentPage = window.location.pathname;
 
     if (currentPage == "/page_2.html")
