@@ -126,7 +126,7 @@ aside a:hover {
     justify-content: space-between;
 
     img {
-        height: 10px;
+        height: 10vh;
     }
 }
 
@@ -574,5 +574,6 @@ table td input[type='checkbox']:checked + table td{
 
     .social-net-links {
         position: relative;
+        right: 0;
     }
 }
