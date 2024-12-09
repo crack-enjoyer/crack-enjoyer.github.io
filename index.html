@@ -1,0 +1,83 @@
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="https://user-images.githubusercontent.com/51058739/169884531-bbc380f0-08d6-468d-8a06-4d68cba620fd.png" alt="Логотип">
+                <p>Logo</p>
+            </div>
+            <div class="group-info">
+                <h1 class="title" id="title">Группа: ЭФБО-02-23</h1>
+                <p>Цой Пётр Александрович</p>
+            </div>
+        </header>
+        
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="first_sem.html">Первый&nbsp;семестр</a></li>
+                <li><a href="second_sem.html">Второй&nbsp;семестр</a></li>
+                <li><a href="page_2.html">Разработка&nbsp;веб&nbsp;приложений</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Авторизация</a></li>
+            </ul>
+        </nav>  
+
+        <main>
+            <aside>
+                <h2>Навигация по странице</h2>
+                <ul>
+                    <li><a href="#frontend">Фронтенд</a></li>
+                    <li><a href="#backend">Бэкенд</a></li>
+                </ul>
+            </aside>
+
+            <section class="content">
+                <div class="intro">
+                    <article id="introduction">
+                        <h2>Добро пожаловать на мой сайт</h2>
+                        <p>
+                            Меня зовут Цой Пётр Александрович и&nbsp;я&nbsp;начинающий специалист по&nbsp;веб-разработке.
+                        </p>    
+                    </article>
+                    <img id="student-photo" src="https://i.pinimg.com/originals/23/91/59/23915926a7248e82453de022cb02ee63.jpg" max-height="100px" alt="Фото котика">
+                </div>
+                <article id="frontend">
+                    <h3>Фронтенд</h3>
+                    <p class="paragraph">Фронтенд (или клиентская часть)&nbsp;&mdash; это&nbsp;то, что видит пользователь. Он&nbsp;включает в&nbsp;себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и&nbsp;текст. Фронтенд разработчики используют языки разметки и&nbsp;стилизации, такие как HTML, CSS и&nbsp;JavaScript, чтобы создавать интерактивные и&nbsp;привлекательные интерфейсы. Основная задача фронтенда&nbsp;&mdash; обеспечить удобство использования и&nbsp;эстетическую привлекательность. Фронтенд-разработчики занимаются созданием удобных и&nbsp;отзывчивых интерфейсов, которые работают быстро и&nbsp;без ошибок.</p>
+                    <video class="video" id="video" controls poster="https://avatars.dzeninfra.ru/get-zen_doc/5313760/pub_6240cc7ff6071616a3c3ed4f_6240e1580599d700e7f1b529/scale_1200">
+                        <source src="front_roadmap.webm"/>
+                    </video>
+                </article>
+                <article id="backend">
+                    <h3>Бэкенд</h3>
+                    <p>Бэкенд (или серверная часть)&nbsp;&mdash; это &laquo;за&nbsp;кулисами&raquo; <nobr>веб-приложения</nobr>. Он&nbsp;отвечает за&nbsp;обработку данных, управление пользователями и&nbsp;взаимодействие с&nbsp;базами данных. Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или <acronym title="Hypertext Preprocessor" lang="en">PHP</acronym>, а&nbsp;также фреймворки и&nbsp;базы данных для создания логики приложения. Основная задача бэкенда&nbsp;&mdash; обеспечить стабильную работу приложения и&nbsp;безопасность данных. Код бэкенда увидеть невозможно&nbsp;&mdash; он&nbsp;не&nbsp;отправляется пользователю напрямую в&nbsp;смартфон или браузер, а&nbsp;работает на&nbsp;сервере, на&nbsp;котором хранится приложение или сайт.</p>
+                    <video class="video" id="video" controls poster="https://tco.am/blog/wp-content/uploads/2018/11/backend-development.jpg">
+                        <source src="backend_roadmap.webm"/>
+                    </video>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-text"> 
+                    <p>&copy; Цой Пётр Александрович 2024</p>
+                </div>
+                <div class="social-net-links">
+                    <a href="https://www.whatsapp.com">  <img src="https://pluspng.com/img-png/whatsapp-png-whatsapp-logo-vetor-png-5000.png" class="social_image" alt="Лого" height="50"></a>
+                    <a href="https://vk.com">  <img src="https://bugulmapts.ru/wp-content/uploads/2024/06/vk-ts1623650785.png" class="social_image" alt="Лого" height="50"></a>
+                </div>
+            </div>
+        </footer>
+
+        <button id="scrollToTopBtn">↑</button>
+        <script src="script.js"></script>
+    </body>
+    </html>

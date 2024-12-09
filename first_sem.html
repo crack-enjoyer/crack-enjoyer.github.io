@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Первый семестр</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://user-images.githubusercontent.com/51058739/169884531-bbc380f0-08d6-468d-8a06-4d68cba620fd.png" alt="Логотип" >
+            <p>Logo</p>
+        </div>
+        <div class="group-info">
+            <h1 class="title" id="title">Группа: ЭФБО-02-23</h1>
+            <p>Цой Пётр Александрович</p>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="first_sem.html">Первый&nbsp;семестр</a></li>
+            <li><a href="second_sem.html">Второй&nbsp;семестр</a></li>
+            <li><a href="page_2.html">Разработка&nbsp;веб&nbsp;приложений</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Авторизация</a></li>
+        </ul>
+    </nav>  
+
+    <main>
+        <aside>
+            <h2>Навигация по&nbsp;странице</h2>
+            <ul>
+                <li><a href="first_sem.html#lections">Лекции</a></li>
+                <li><a href="first_sem.html#seminars">Практики</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h2>Первый семестр</h2>
+            <h3>Лекции</h3>
+            <table class="lections" id="lections" style="display: none">
+                <tr><th>Номер</th><th>Тема</th><th>Посещение</th></tr>
+                <tr><td>1</td><td>Основы языка HTML</td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>2</td><td>Углубленное изучение HTML</td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>3</td><td>Основы работы с CSS</td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>4</td><td>Адаптивная вёрстка. FlexBox и Grid Layout</td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>5</td><td>Bootstrap —— работа с фреймворком</td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>6</td><td>Основы языка JavaScript</td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>7</td><td>Работа с DOM и событиями JavaScript</td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>8</td><td>Введение в Github и Github Pages</td><td class="checkbox"><input type="checkbox"></td></tr>
+            </table>
+            <button id="show-lectures" class="change-table-btn">Показать&nbsp;лекции</button>
+            <h3>Практики</h3>
+            <table class="seminars" id="seminars">
+                <tr><th>Номер</th><th>Тема</th><th>Посещение</th><th>Выполнение</th></tr>
+                <tr><td>1</td><td>Основы языка HTML</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>2</td><td>Формы и кнопки в HTML</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>3</td><td>Таблицы и интерактивные элементы HTML</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>4</td><td>Основы работы с CSS</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>5</td><td>Работа с классами в CSS</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>6</td><td>Работа с сетками и разметкой в HTML</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>7</td><td>Адаптивная вёрстка</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>8</td><td>Bootstrap</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>9</td><td>Основы языка JavaScript</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>10</td><td>Базовые задачи на JS</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>11</td><td>DOM-структура приложений и работа с объектами в языке JS</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>12</td><td>Встраивание скриптов</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>13</td><td>Отладка сценариев</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>14</td><td>Анимации и работа с ними</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>15</td><td>Github</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+                <tr><td>16</td><td>Защита проекта</td><td class="checkbox"><input type="checkbox"></td><td class="checkbox"><input type="checkbox"></td></tr>
+            </table>
+            <button id="change-table-btn" class="change-table-btn">Показать&nbsp;темы&nbsp;второго семестра</button>
+            <h4>Занятия проходят по адресу_________________________________</h4>
+            <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaef393c4415fcdf389d5bd7ed7d81c87123561cbc95d757373840d6a6d91ee93&amp;source=constructor"></iframe>
+            <h4>Рабочая программа</h4>
+            <iframe class="doc" src="annot_09.03.02_FR_2023.pdf"></iframe>
+        </section>
+    </main>
+
+    <button id="scrollToTopBtn">↑</button>
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text"> 
+                <p>&copy; Цой Пётр Александрович 2024</p>
+            </div>
+            <div class="social-net-links">
+                <a href="https://www.whatsapp.com">  <img src="https://pluspng.com/img-png/whatsapp-png-whatsapp-logo-vetor-png-5000.png" alt="Лого" height="50"></a>
+                <a href="https://vk.com">  <img src="https://bugulmapts.ru/wp-content/uploads/2024/06/vk-ts1623650785.png" alt="Лого" height="50"></a>
+            </div>
+        </div>
+    </footer>
+</body>

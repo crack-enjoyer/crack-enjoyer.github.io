@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработка веб-приложений</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://user-images.githubusercontent.com/51058739/169884531-bbc380f0-08d6-468d-8a06-4d68cba620fd.png" alt="Логотип">
+            <p>Logo</p>
+        </div>
+        <div class="group-info">
+            <h1 class="title" id="title">Группа: ЭФБО-02-23</h1>
+            <p>Цой Пётр Александрович</p>
+        </div>
+    </header>
+    
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="first_sem.html">Первый семестр</a></li>
+            <li><a href="second_sem.html">Второй семестр</a></li>
+            <li><a href="page_2.html">Разработка&nbsp;веб&nbsp;приложений</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Авторизация</a></li>
+        </ul>
+    </nav>  
+
+    <main>
+        <aside>
+            <h2>Навигация по&nbsp;странице</h2>
+            <ul>
+                <li><a href="page_2.html#business-card">Сайт-визитка</a></li>
+                <li><a href="page_2.html#corpo-site">Корпоративный сайт</a></li>
+                <li><a href="page_2.html#web-store">Интернет-магазин</a></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h2>Разработка веб-приложений</h2>
+            <div class="web-apps">
+                <div class="app">
+                    <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_65dc89d1d81e6e78f481b821_65dc8a05e3fa4d709b5fc75a/scale_1200" alt="Сайт-визитка">
+                    <p>Сайт-визитка</p>
+                    <button class="openModal">Заказать</button>
+                </div>
+                <div class="app">
+                    <img src="https://www.kindpng.com/picc/m/161-1617025_corporate-image-design-png-transparent-png.png" alt="Корпоративный сайт">
+                    <p>Корпоративный сайт</p>
+                    <button class="openModal">Заказать</button>
+                </div>
+                <div class="app">
+                    <img src="https://avatars.mds.yandex.net/i?id=fcfeb35a20682e1bde468506c27aab72_l-5317467-images-thumbs&n=13" alt="Интернет-магазин">
+                    <p>Интернет-магазин</p>
+                    <button class="openModal">Заказать</button>
+                </div>
+            </div>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 class="webdev">Форма обратной связи</h2>
+                    <article>
+                        <h3>Разработка веб-приложения</h3>
+                        <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+                    </article>
+                    <form id="contactForm" class="my_form">
+                        <div class="my_form">
+                            <label for="name">Как вас зовут </label>
+                            <input type="text" id="name" name="name" required placeholder="Иванов Иван Иванович"> 
+                        </div>
+                        <div class="my_form">
+                            <label for="email">Ваш e-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="ivanov@gmail.com">
+                        </div>
+                        <div class="my_form">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" placeholder="+7 999 999 99 99" required>
+                        </div>
+                        <div class="my_form">
+                            <label for="date">Дата</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+            
+                        <div class="my_form">
+                            <label for="country">Страна</label>
+                            <select id="country" name="country" required>
+                                <option value="">Выберите страну</option>
+                                <option value="RU">Россия</option>
+                                <option value="US">США</option>
+                                <option value="DE">Германия</option>
+                                <option value="FR">Франция</option>
+                                <option value="JP">Япония</option>
+                            </select><br><br>
+                        </div>
+            
+                        <div class="my_form">
+                            <label for="comments">Опишите ваш запрос:</label>
+                            <textarea id="comments" rows="4" required></textarea>
+                        </div>  
+            
+                        <div class="my_form">
+                            <label for="checkbox">Согласен на обработку персональных данных</label>
+                            <input type="checkbox" id="checkbox" required>
+                        </div>
+            
+                        <button class="submit">Отправить</button>
+                    </form>
+                    
+                    <div id="message" style="color: black; opacity: 0; transition: color 1.75s ease, opacity 0.75s ease;"></div>
+                </div>
+            </div>        
+
+            <h3>Разработка веб-приложений</h3>
+            <p>В&nbsp;современном цифровом мире наличие качественного веб-присутствия является ключевым фактором успеха для бизнеса. Разработка мобильных приложений, сайт-визиток, корпоративных сайтов и&nbsp;интернет-магазинов&nbsp;&mdash; это важные аспекты, которые помогают компаниям эффективно взаимодействовать с&nbsp;клиентами и&nbsp;расширять свою аудиторию.</p>
+            <h3 id="business-card">Сайт-визитка</h3>
+            <p>Сайт-визитка&nbsp;&mdash; это простой и&nbsp;эффективный инструмент для представления бизнеса в&nbsp;интернете. Он&nbsp;служит для: предоставления информации&nbsp;О компании, ее&nbsp;услугах и&nbsp;контактных данных, создания первого впечатления о&nbsp;бизнесе, позволяет потенциальным клиентам быстро найти нужную информацию. Сайт-визитка обычно состоит из&nbsp;нескольких страниц (главная, о&nbsp;компании, услуги, контакты) и&nbsp;не&nbsp;требует значительных затрат на&nbsp;разработку.</p>
+            <h3 id="corpo-site">Корпоративный сайт</h3>
+            <p>Корпоративный сайт&nbsp;&mdash; это более сложный ресурс, который отражает имидж компании и&nbsp;предоставляет информацию о&nbsp;ее&nbsp;деятельности. Корпоративный сайт помогает укрепить доверие клиентов и&nbsp;партнеров, а&nbsp;также улучшает видимость компании в&nbsp;поисковых системах.</p>
+            <h3 id="web-store">Интернет-магазин</h3>
+            <p>Интернет-магазин&nbsp;&mdash; это платформа для онлайн-продаж, которая позволяет пользователям удобно выбирать и&nbsp;заказывать товары. Интернет-магазин открывает новые возможности для бизнеса, позволяя достигать широкой аудитории и&nbsp;увеличивать объемы продаж.</p>
+        </section>
+    </main>
+
+    <button id="scrollToTopBtn">↑</button>
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text"> 
+                <p>&copy; Цой Пётр Александрович 2024</p>
+            </div>
+            <div class="social-net-links">
+                <a href="https://www.whatsapp.com">  <img src="https://pluspng.com/img-png/whatsapp-png-whatsapp-logo-vetor-png-5000.png" alt="Лого" height="50"></a>
+                <a href="https://vk.com">  <img src="https://bugulmapts.ru/wp-content/uploads/2024/06/vk-ts1623650785.png" alt="Лого" height="50"></a>
+            </div>
+        </div>
+    </footer>   
+</body>
+</html>
