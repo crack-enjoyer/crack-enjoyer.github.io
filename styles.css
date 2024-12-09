@@ -75,7 +75,7 @@ nav ul li {
     border-radius: 10px;
 }
 
-nav ul li:hover {
+nav ul li:hover, nav ul li:focus {
     background-color: #ffffff;
     a {
         color: black;
